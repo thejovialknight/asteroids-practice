@@ -1,7 +1,0 @@
-#include <math.h>
-#include "vec2.h"
-
-Vec2 Vec2::unit() {
-	int sum = x * x + y * y + z * z;
-	return
-}
