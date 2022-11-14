@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/conner/repos/cmake-boilerplate
+CMAKE_SOURCE_DIR = /home/conner/repos/asteroids-practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/conner/repos/cmake-boilerplate/build
+CMAKE_BINARY_DIR = /home/conner/repos/asteroids-practice/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/conner/repos/cmake-boilerplate/build/CMakeFiles /home/conner/repos/cmake-boilerplate/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/conner/repos/asteroids-practice/build/CMakeFiles /home/conner/repos/asteroids-practice/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/conner/repos/cmake-boilerplate/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/conner/repos/asteroids-practice/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Boilerplate
+# Target rules for targets named asteroids
 
 # Build rule for target.
-Boilerplate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boilerplate
-.PHONY : Boilerplate
+asteroids: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asteroids
+.PHONY : asteroids
 
 # fast build rule for target.
-Boilerplate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/build
-.PHONY : Boilerplate/fast
+asteroids/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/build
+.PHONY : asteroids/fast
+
+src/entity.o: src/entity.cpp.o
+.PHONY : src/entity.o
+
+# target to build an object file
+src/entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/entity.cpp.o
+.PHONY : src/entity.cpp.o
+
+src/entity.i: src/entity.cpp.i
+.PHONY : src/entity.i
+
+# target to preprocess a source file
+src/entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/entity.cpp.i
+.PHONY : src/entity.cpp.i
+
+src/entity.s: src/entity.cpp.s
+.PHONY : src/entity.s
+
+# target to generate assembly for a file
+src/entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/entity.cpp.s
+.PHONY : src/entity.cpp.s
+
+src/input.o: src/input.cpp.o
+.PHONY : src/input.o
+
+# target to build an object file
+src/input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/input.cpp.o
+.PHONY : src/input.cpp.o
+
+src/input.i: src/input.cpp.i
+.PHONY : src/input.i
+
+# target to preprocess a source file
+src/input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/input.cpp.i
+.PHONY : src/input.cpp.i
+
+src/input.s: src/input.cpp.s
+.PHONY : src/input.s
+
+# target to generate assembly for a file
+src/input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/input.cpp.s
+.PHONY : src/input.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,32 +198,104 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/player.o: src/player.cpp.o
+.PHONY : src/player.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/player.cpp.o
+.PHONY : src/player.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/player.i: src/player.cpp.i
+.PHONY : src/player.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/player.s: src/player.cpp.s
+.PHONY : src/player.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Boilerplate.dir/build.make CMakeFiles/Boilerplate.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
+
+src/render.o: src/render.cpp.o
+.PHONY : src/render.o
+
+# target to build an object file
+src/render.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/render.cpp.o
+.PHONY : src/render.cpp.o
+
+src/render.i: src/render.cpp.i
+.PHONY : src/render.i
+
+# target to preprocess a source file
+src/render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/render.cpp.i
+.PHONY : src/render.cpp.i
+
+src/render.s: src/render.cpp.s
+.PHONY : src/render.s
+
+# target to generate assembly for a file
+src/render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/render.cpp.s
+.PHONY : src/render.cpp.s
+
+src/vec2.o: src/vec2.cpp.o
+.PHONY : src/vec2.o
+
+# target to build an object file
+src/vec2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/vec2.cpp.o
+.PHONY : src/vec2.cpp.o
+
+src/vec2.i: src/vec2.cpp.i
+.PHONY : src/vec2.i
+
+# target to preprocess a source file
+src/vec2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/vec2.cpp.i
+.PHONY : src/vec2.cpp.i
+
+src/vec2.s: src/vec2.cpp.s
+.PHONY : src/vec2.s
+
+# target to generate assembly for a file
+src/vec2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/vec2.cpp.s
+.PHONY : src/vec2.cpp.s
+
+src/world.o: src/world.cpp.o
+.PHONY : src/world.o
+
+# target to build an object file
+src/world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/world.cpp.o
+.PHONY : src/world.cpp.o
+
+src/world.i: src/world.cpp.i
+.PHONY : src/world.i
+
+# target to preprocess a source file
+src/world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/world.cpp.i
+.PHONY : src/world.cpp.i
+
+src/world.s: src/world.cpp.s
+.PHONY : src/world.s
+
+# target to generate assembly for a file
+src/world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/world.cpp.s
+.PHONY : src/world.cpp.s
 
 # Help Target
 help:
@@ -185,13 +305,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Boilerplate"
+	@echo "... asteroids"
+	@echo "... src/entity.o"
+	@echo "... src/entity.i"
+	@echo "... src/entity.s"
+	@echo "... src/input.o"
+	@echo "... src/input.i"
+	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/player.o"
+	@echo "... src/player.i"
+	@echo "... src/player.s"
+	@echo "... src/render.o"
+	@echo "... src/render.i"
+	@echo "... src/render.s"
+	@echo "... src/vec2.o"
+	@echo "... src/vec2.i"
+	@echo "... src/vec2.s"
+	@echo "... src/world.o"
+	@echo "... src/world.i"
+	@echo "... src/world.s"
 .PHONY : help
 
 
