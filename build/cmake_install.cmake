@@ -1,4 +1,4 @@
-# Install script for directory: /home/conner/repos/asteroids-practice
+# Install script for directory: /home/thejovialknight/repos/asteroids-practice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/conner/repos/asteroids-practice/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/thejovialknight/repos/asteroids-practice/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

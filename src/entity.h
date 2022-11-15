@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <math.h>
 
 #include "vec2.h"
 
@@ -22,6 +23,8 @@ struct Entity {
 
 	Entity(Vec2 position, double rotation, Vec2 velocity, std::vector<Line> lines)
 		: position(position), rotation(rotation), velocity(velocity), lines(lines) {}
+
+	Vec2 forward_unit_vector();
 };
 
 void apply_velocities(std::vector<Entity>& entities, double delta_time);

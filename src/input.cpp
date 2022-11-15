@@ -1,5 +1,6 @@
 #include "input.h"
 #include <SDL2/SDL_scancode.h>
+#include <iostream>
 
 void Button::query_press(SDL_Scancode input, SDL_Scancode expected) {
 	if(input == expected) {
@@ -37,9 +38,10 @@ void Input::set()
 		{
 		case SDL_QUIT:
 			exit.just_pressed = true;
+			exit.held = true;
 			break;
 		case SDL_KEYDOWN:
-			exit.query_press(event.key.keysym.scancode, SDL_SCANCODE_ESCAPE);
+			//exit.query_press(event.key.keysym.scancode, SDL_SCANCODE_ESCAPE);
 			left.query_press(event.key.keysym.scancode, SDL_SCANCODE_LEFT);
 			right.query_press(event.key.keysym.scancode, SDL_SCANCODE_RIGHT);
 			thrust.query_press(event.key.keysym.scancode, SDL_SCANCODE_UP);
@@ -54,5 +56,7 @@ void Input::set()
 			break;
 		}
 	}
+
+	std::cout << "exit held is " << exit.held << " and just pressed is " << exit.just_pressed << "!" << std::endl;
 }
 

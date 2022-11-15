@@ -4,9 +4,7 @@
 #include "input.h"
 #include "world.h"
 #include "render.h"
-
-#define WINDOW_WIDTH 1280
-#define WINDOW_HEIGHT 1280
+#include "config.h"
 
 int main(int argc, char* argv[]) {
 	if(SDL_Init(SDL_INIT_EVERYTHING) != 0) {
@@ -32,13 +30,17 @@ int main(int argc, char* argv[]) {
 
 	bool exit = false;
 	while(!exit) {
+		std::cout << "Starting loop!" << std::endl;
 		input.set();
 		if(input.exit.held) { 
+			std::cout << "Exit held!" << std::endl;
 			exit = true; 
 		}
-		world.update(input, 0.016);
+		world.update(input, 0.216);
 		render(renderer, world);
 		SDL_Delay(16);
+		std::cout << "Ending loop!" << std::endl;
+		if(exit) std::cout << "With exit!" << std::endl;
 	}
 }
 
