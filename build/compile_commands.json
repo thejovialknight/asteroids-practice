@@ -1,42 +1,42 @@
 [
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/bullet.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/bullet.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/bullet.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/bullet.cpp.o -c /home/conner/repos/asteroids-practice/src/bullet.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/bullet.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/entity.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/entity.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/entity.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/entity.cpp.o -c /home/conner/repos/asteroids-practice/src/entity.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/entity.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/input.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/input.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/input.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/input.cpp.o -c /home/conner/repos/asteroids-practice/src/input.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/input.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/main.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/main.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/main.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/main.cpp.o -c /home/conner/repos/asteroids-practice/src/main.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/main.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/player.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/player.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/player.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/player.cpp.o -c /home/conner/repos/asteroids-practice/src/player.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/player.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/render.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/render.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/render.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/render.cpp.o -c /home/conner/repos/asteroids-practice/src/render.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/render.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/vec2.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/vec2.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/vec2.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/vec2.cpp.o -c /home/conner/repos/asteroids-practice/src/vec2.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/vec2.cpp"
 },
 {
-  "directory": "/home/thejovialknight/repos/asteroids-practice/build",
-  "command": "/usr/bin/c++  -I/home/thejovialknight/repos/asteroids-practice/include -I/home/thejovialknight/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/world.cpp.o -c /home/thejovialknight/repos/asteroids-practice/src/world.cpp",
-  "file": "/home/thejovialknight/repos/asteroids-practice/src/world.cpp"
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/world.cpp.o -c /home/conner/repos/asteroids-practice/src/world.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/world.cpp"
 }
 ]

@@ -12,7 +12,7 @@ std::vector<Line> bullet_shape() {
 
 void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entities) {
 	// Config
-	const double speed = 150;
+	const double speed = 300;
 
 	Vec2 player_forward = player.forward_unit_vector();
 	Vec2 position(

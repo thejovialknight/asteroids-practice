@@ -14,9 +14,9 @@ std::vector<Line> player_shape() {
 
 void control_player(Entity& player, Input& input, std::vector<int>& bullets, std::vector<Entity>& entities, double delta_time) {
 	// Config
-	const double rotation_speed = 2;
-	const double acceleration = 100;
-	const double max_speed = 150;
+	const double rotation_speed = 4;
+	const double acceleration = 200;
+	const double max_speed = 300;
 	const double window_buffer = 12;
 
 	// Screen wrap

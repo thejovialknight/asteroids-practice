@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
 			std::cout << "Exit held!" << std::endl;
 			exit = true; 
 		}
-		world.update(input, 0.216);
+		world.update(input, 0.016);
 		render(renderer, world);
 		SDL_Delay(16);
 		std::cout << "Ending loop!" << std::endl;

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/thejovialknight/repos/asteroids-practice/bin/asteroids"
-  "/home/thejovialknight/repos/asteroids-practice/bin/asteroids.pdb"
+  "../bin/asteroids"
+  "../bin/asteroids.pdb"
   "CMakeFiles/asteroids.dir/src/bullet.cpp.o"
   "CMakeFiles/asteroids.dir/src/bullet.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/entity.cpp.o"
