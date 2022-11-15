@@ -129,6 +129,30 @@ asteroids/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/build
 .PHONY : asteroids/fast
 
+src/asteroid.o: src/asteroid.cpp.o
+.PHONY : src/asteroid.o
+
+# target to build an object file
+src/asteroid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/asteroid.cpp.o
+.PHONY : src/asteroid.cpp.o
+
+src/asteroid.i: src/asteroid.cpp.i
+.PHONY : src/asteroid.i
+
+# target to preprocess a source file
+src/asteroid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/asteroid.cpp.i
+.PHONY : src/asteroid.cpp.i
+
+src/asteroid.s: src/asteroid.cpp.s
+.PHONY : src/asteroid.s
+
+# target to generate assembly for a file
+src/asteroid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/asteroid.cpp.s
+.PHONY : src/asteroid.cpp.s
+
 src/bullet.o: src/bullet.cpp.o
 .PHONY : src/bullet.o
 
@@ -330,6 +354,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... asteroids"
+	@echo "... src/asteroid.o"
+	@echo "... src/asteroid.i"
+	@echo "... src/asteroid.s"
 	@echo "... src/bullet.o"
 	@echo "... src/bullet.i"
 	@echo "... src/bullet.s"

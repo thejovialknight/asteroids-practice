@@ -3,6 +3,7 @@
 #include <math.h>
 
 #include "vec2.h"
+#include "config.h"
 
 struct Line {
 	Vec2 start;
@@ -28,3 +29,4 @@ struct Entity {
 };
 
 void apply_velocities(std::vector<Entity>& entities, double delta_time);
+void screen_wrap(Entity& entity, double window_buffer);

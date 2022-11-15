@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../bin/asteroids"
   "../bin/asteroids.pdb"
+  "CMakeFiles/asteroids.dir/src/asteroid.cpp.o"
+  "CMakeFiles/asteroids.dir/src/asteroid.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/bullet.cpp.o"
   "CMakeFiles/asteroids.dir/src/bullet.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/entity.cpp.o"

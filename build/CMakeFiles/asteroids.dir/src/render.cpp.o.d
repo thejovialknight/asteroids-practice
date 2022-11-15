@@ -234,9 +234,9 @@ CMakeFiles/asteroids.dir/src/render.cpp.o: \
  /home/conner/repos/asteroids-practice/src/input.h \
  /home/conner/repos/asteroids-practice/src/entity.h \
  /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/config.h \
  /home/conner/repos/asteroids-practice/src/player.h \
  /home/conner/repos/asteroids-practice/src/bullet.h \
- /home/conner/repos/asteroids-practice/src/config.h \
  /usr/include/SDL2/SDL_render.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \

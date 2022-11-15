@@ -177,6 +177,7 @@ CMakeFiles/asteroids.dir/src/player.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/config.h \
  /home/conner/repos/asteroids-practice/src/input.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
@@ -291,5 +292,4 @@ CMakeFiles/asteroids.dir/src/player.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/conner/repos/asteroids-practice/src/bullet.h \
- /home/conner/repos/asteroids-practice/src/config.h
+ /home/conner/repos/asteroids-practice/src/bullet.h

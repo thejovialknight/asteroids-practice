@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/asteroid.cpp.o -c /home/conner/repos/asteroids-practice/src/asteroid.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/asteroid.cpp"
+},
+{
+  "directory": "/home/conner/repos/asteroids-practice/build",
   "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/bullet.cpp.o -c /home/conner/repos/asteroids-practice/src/bullet.cpp",
   "file": "/home/conner/repos/asteroids-practice/src/bullet.cpp"
 },

@@ -11,3 +11,9 @@ void apply_velocities(std::vector<Entity>& entities, double delta_time) {
 	}
 }
 
+void screen_wrap(Entity& entity, double window_buffer) {
+	if(entity.position.x < 0 - window_buffer) entity.position.x = WINDOW_WIDTH + window_buffer;
+	if(entity.position.x > WINDOW_WIDTH + window_buffer) entity.position.x = 0 - window_buffer;
+	if(entity.position.y < 0 - window_buffer) entity.position.y = WINDOW_HEIGHT + window_buffer;
+	if(entity.position.y > WINDOW_HEIGHT + window_buffer) entity.position.y = 0 - window_buffer;
+}

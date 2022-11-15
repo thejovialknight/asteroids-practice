@@ -20,6 +20,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Compile the passed source files into an executable
 add_executable(asteroids
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/asteroid.h"
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/asteroid.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/bullet.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/bullet.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/entity.h"

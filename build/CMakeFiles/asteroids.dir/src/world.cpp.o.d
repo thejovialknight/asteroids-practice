@@ -233,9 +233,10 @@ CMakeFiles/asteroids.dir/src/world.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/conner/repos/asteroids-practice/src/entity.h \
  /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/config.h \
  /home/conner/repos/asteroids-practice/src/player.h \
  /home/conner/repos/asteroids-practice/src/bullet.h \
- /home/conner/repos/asteroids-practice/src/config.h \
+ /home/conner/repos/asteroids-practice/src/asteroid.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \

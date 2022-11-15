@@ -19,11 +19,7 @@ void control_player(Entity& player, Input& input, std::vector<int>& bullets, std
 	const double max_speed = 300;
 	const double window_buffer = 12;
 
-	// Screen wrap
-	if(player.position.x < 0 - window_buffer) player.position.x = WINDOW_WIDTH + window_buffer;
-	if(player.position.x > WINDOW_WIDTH + window_buffer) player.position.x = 0 - window_buffer;
-	if(player.position.y < 0 - window_buffer) player.position.y = WINDOW_HEIGHT + window_buffer;
-	if(player.position.y > WINDOW_HEIGHT + window_buffer) player.position.y = 0 - window_buffer;
+	screen_wrap(player, window_buffer);
 
 	// Movement
 	if(input.left.held) {

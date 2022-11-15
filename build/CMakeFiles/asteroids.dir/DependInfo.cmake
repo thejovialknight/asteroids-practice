@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/conner/repos/asteroids-practice/src/asteroid.cpp" "CMakeFiles/asteroids.dir/src/asteroid.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/asteroid.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/bullet.cpp" "CMakeFiles/asteroids.dir/src/bullet.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/bullet.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/entity.cpp" "CMakeFiles/asteroids.dir/src/entity.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/entity.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/input.cpp" "CMakeFiles/asteroids.dir/src/input.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/input.cpp.o.d"
