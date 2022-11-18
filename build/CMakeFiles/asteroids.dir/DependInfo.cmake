@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/conner/repos/asteroids-practice/src/asteroid.cpp" "CMakeFiles/asteroids.dir/src/asteroid.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/asteroid.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/bullet.cpp" "CMakeFiles/asteroids.dir/src/bullet.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/bullet.cpp.o.d"
+  "/home/conner/repos/asteroids-practice/src/collision.cpp" "CMakeFiles/asteroids.dir/src/collision.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/collision.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/entity.cpp" "CMakeFiles/asteroids.dir/src/entity.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/entity.cpp.o.d"
+  "/home/conner/repos/asteroids-practice/src/epsilon.cpp" "CMakeFiles/asteroids.dir/src/epsilon.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/epsilon.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/input.cpp" "CMakeFiles/asteroids.dir/src/input.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/input.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/main.cpp" "CMakeFiles/asteroids.dir/src/main.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/main.cpp.o.d"
   "/home/conner/repos/asteroids-practice/src/player.cpp" "CMakeFiles/asteroids.dir/src/player.cpp.o" "gcc" "CMakeFiles/asteroids.dir/src/player.cpp.o.d"

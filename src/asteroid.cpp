@@ -4,7 +4,7 @@
 // Spawns asteroid at particular point
 void spawn_asteroid(Vec2 position, std::vector<int>& asteroids, std::vector<Entity>& entities) {
 	int max_speed = 100;
-	entities.emplace_back(Entity(position, rand() % 1000, Vec2(rand() % max_speed, rand() % max_speed), asteroid_shape()));
+	entities.emplace_back(Entity(position, rand() % 1000, Vec2((rand() % max_speed) - (double)max_speed / 2, (rand() % max_speed) - (double)max_speed / 2), asteroid_shape()));
 	asteroids.emplace_back(entities.size() -1);
 }
 
@@ -45,11 +45,21 @@ std::vector<Line> asteroid_shape() {
 	};
 }
 
-void control_asteroids(std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
+void control_asteroids(int player_index, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
 	const double rotation_speed = 2;
+	
+	Entity& player = entities[player_index];
+
 	for(int& asteroid_index : asteroids) {
 		Entity& asteroid = entities[asteroid_index];
+
 		asteroid.rotation += rotation_speed * delta_time;
 		screen_wrap(asteroid, 32);
+		
+		if(collision(asteroid, player)) {
+			std::cout << "Colliding with player!" << std::endl;
+			player.lines.clear();
+		}
 	}
+
 }

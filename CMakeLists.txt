@@ -24,8 +24,12 @@ add_executable(asteroids
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/asteroid.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/bullet.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/bullet.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/collision.h"
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/collision.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/entity.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/entity.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/epsilon.h"
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/epsilon.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/input.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/input.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp"
@@ -37,6 +41,12 @@ add_executable(asteroids
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/vec2.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/world.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/world.cpp"
+	)
+
+# Reference include directory
+target_include_directories(asteroids PUBLIC
+	"${CMAKE_CURRENT_SOURCE_DIR}/include"
+	"${SDL_INCLUDE_DIRS}"
 	)
 
 # Reference include directory

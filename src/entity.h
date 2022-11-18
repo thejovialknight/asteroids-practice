@@ -28,5 +28,6 @@ struct Entity {
 	Vec2 forward_unit_vector();
 };
 
+Line offset_line(Vec2& position, Line& line);
 void apply_velocities(std::vector<Entity>& entities, double delta_time);
 void screen_wrap(Entity& entity, double window_buffer);

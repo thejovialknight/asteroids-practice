@@ -11,8 +11,18 @@
 },
 {
   "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/collision.cpp.o -c /home/conner/repos/asteroids-practice/src/collision.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/collision.cpp"
+},
+{
+  "directory": "/home/conner/repos/asteroids-practice/build",
   "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/entity.cpp.o -c /home/conner/repos/asteroids-practice/src/entity.cpp",
   "file": "/home/conner/repos/asteroids-practice/src/entity.cpp"
+},
+{
+  "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/epsilon.cpp.o -c /home/conner/repos/asteroids-practice/src/epsilon.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/epsilon.cpp"
 },
 {
   "directory": "/home/conner/repos/asteroids-practice/build",

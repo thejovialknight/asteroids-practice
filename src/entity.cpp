@@ -4,6 +4,10 @@ Vec2 Entity::forward_unit_vector() {
 	return Vec2(cos(rotation), sin(rotation));
 }
 
+Line offset_line(Vec2& position, Line& line) {
+	return Line(line.start + position, line.end + position);
+}
+
 void apply_velocities(std::vector<Entity>& entities, double delta_time) {
 	for(Entity& entity : entities) {
 		entity.position.x = entity.position.x + (entity.velocity.x * delta_time);

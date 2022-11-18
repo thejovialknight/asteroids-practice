@@ -5,8 +5,6 @@
 #include <iostream>
 
 void render(SDL_Renderer* renderer, World& world) {
-	std::cout << "Starting render!" << std::endl;
-
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
@@ -22,8 +20,6 @@ void render(SDL_Renderer* renderer, World& world) {
 		}
 	}
 	SDL_RenderPresent(renderer);
-
-	std::cout << "Rendered!" << std::endl;
 }
 
 Line line_about_origin(Line& line, Vec2& origin, double rotation) {

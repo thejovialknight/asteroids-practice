@@ -177,6 +177,7 @@ CMakeFiles/asteroids.dir/src/player.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/epsilon.h \
  /home/conner/repos/asteroids-practice/src/config.h \
  /home/conner/repos/asteroids-practice/src/input.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \

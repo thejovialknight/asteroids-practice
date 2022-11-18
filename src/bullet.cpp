@@ -30,8 +30,6 @@ void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entit
 		bullet_shape()
 	));
 	bullets.emplace_back(entities.size() - 1);
-
-	std::cout << "Bullet shot at " << position.x << ", " << position.y << " and with velocity " << velocity.x << ", " << velocity.y << "!" << std::endl;
 }
 
 void control_bullet(std::vector<int>& bullets, std::vector<Entity>& entities) {

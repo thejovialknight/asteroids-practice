@@ -56,7 +56,5 @@ void Input::set()
 			break;
 		}
 	}
-
-	std::cout << "exit held is " << exit.held << " and just pressed is " << exit.just_pressed << "!" << std::endl;
 }
 

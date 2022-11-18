@@ -177,6 +177,30 @@ src/bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/bullet.cpp.s
 .PHONY : src/bullet.cpp.s
 
+src/collision.o: src/collision.cpp.o
+.PHONY : src/collision.o
+
+# target to build an object file
+src/collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/collision.cpp.o
+.PHONY : src/collision.cpp.o
+
+src/collision.i: src/collision.cpp.i
+.PHONY : src/collision.i
+
+# target to preprocess a source file
+src/collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/collision.cpp.i
+.PHONY : src/collision.cpp.i
+
+src/collision.s: src/collision.cpp.s
+.PHONY : src/collision.s
+
+# target to generate assembly for a file
+src/collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/collision.cpp.s
+.PHONY : src/collision.cpp.s
+
 src/entity.o: src/entity.cpp.o
 .PHONY : src/entity.o
 
@@ -200,6 +224,30 @@ src/entity.s: src/entity.cpp.s
 src/entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/entity.cpp.s
 .PHONY : src/entity.cpp.s
+
+src/epsilon.o: src/epsilon.cpp.o
+.PHONY : src/epsilon.o
+
+# target to build an object file
+src/epsilon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/epsilon.cpp.o
+.PHONY : src/epsilon.cpp.o
+
+src/epsilon.i: src/epsilon.cpp.i
+.PHONY : src/epsilon.i
+
+# target to preprocess a source file
+src/epsilon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/epsilon.cpp.i
+.PHONY : src/epsilon.cpp.i
+
+src/epsilon.s: src/epsilon.cpp.s
+.PHONY : src/epsilon.s
+
+# target to generate assembly for a file
+src/epsilon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/epsilon.cpp.s
+.PHONY : src/epsilon.cpp.s
 
 src/input.o: src/input.cpp.o
 .PHONY : src/input.o
@@ -360,9 +408,15 @@ help:
 	@echo "... src/bullet.o"
 	@echo "... src/bullet.i"
 	@echo "... src/bullet.s"
+	@echo "... src/collision.o"
+	@echo "... src/collision.i"
+	@echo "... src/collision.s"
 	@echo "... src/entity.o"
 	@echo "... src/entity.i"
 	@echo "... src/entity.s"
+	@echo "... src/epsilon.o"
+	@echo "... src/epsilon.i"
+	@echo "... src/epsilon.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"

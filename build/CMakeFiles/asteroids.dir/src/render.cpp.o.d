@@ -230,14 +230,7 @@ CMakeFiles/asteroids.dir/src/render.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/conner/repos/asteroids-practice/src/input.h \
- /home/conner/repos/asteroids-practice/src/entity.h \
- /home/conner/repos/asteroids-practice/src/vec2.h \
- /home/conner/repos/asteroids-practice/src/config.h \
- /home/conner/repos/asteroids-practice/src/player.h \
- /home/conner/repos/asteroids-practice/src/bullet.h \
- /usr/include/SDL2/SDL_render.h /usr/include/c++/11/iostream \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -294,4 +287,14 @@ CMakeFiles/asteroids.dir/src/render.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/conner/repos/asteroids-practice/src/input.h \
+ /home/conner/repos/asteroids-practice/src/entity.h \
+ /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/epsilon.h \
+ /home/conner/repos/asteroids-practice/src/config.h \
+ /home/conner/repos/asteroids-practice/src/player.h \
+ /home/conner/repos/asteroids-practice/src/bullet.h \
+ /home/conner/repos/asteroids-practice/src/asteroid.h \
+ /home/conner/repos/asteroids-practice/src/collision.h \
+ /usr/include/SDL2/SDL_render.h

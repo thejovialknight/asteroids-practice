@@ -24,11 +24,9 @@ void control_player(Entity& player, Input& input, std::vector<int>& bullets, std
 	// Movement
 	if(input.left.held) {
 		player.rotation -= rotation_speed * delta_time;
-		std::cout << "LEFT!" << std::endl;
 	}
 	if(input.right.held) {
 		player.rotation += rotation_speed * delta_time;
-		std::cout << "RIGHT!" << std::endl;
 	}
 	if(input.thrust.held) {
 		Vec2 thrust_direction = player.forward_unit_vector();

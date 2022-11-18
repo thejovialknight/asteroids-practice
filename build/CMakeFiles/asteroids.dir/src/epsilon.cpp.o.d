@@ -1,7 +1,8 @@
-CMakeFiles/asteroids.dir/src/vec2.cpp.o: \
- /home/conner/repos/asteroids-practice/src/vec2.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/math.h \
- /usr/include/c++/11/cmath \
+CMakeFiles/asteroids.dir/src/epsilon.cpp.o: \
+ /home/conner/repos/asteroids-practice/src/epsilon.cpp \
+ /usr/include/stdc-predef.h \
+ /home/conner/repos/asteroids-practice/src/epsilon.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -84,6 +85,4 @@ CMakeFiles/asteroids.dir/src/vec2.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/conner/repos/asteroids-practice/src/vec2.h \
- /home/conner/repos/asteroids-practice/src/epsilon.h
+ /usr/include/c++/11/tr1/riemann_zeta.tcc

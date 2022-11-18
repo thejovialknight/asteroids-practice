@@ -103,4 +103,5 @@ CMakeFiles/asteroids.dir/src/entity.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/conner/repos/asteroids-practice/src/vec2.h \
+ /home/conner/repos/asteroids-practice/src/epsilon.h \
  /home/conner/repos/asteroids-practice/src/config.h
