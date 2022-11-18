@@ -32,9 +32,19 @@ void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entit
 	bullets.emplace_back(entities.size() - 1);
 }
 
-void control_bullet(std::vector<int>& bullets, std::vector<Entity>& entities) {
+void control_bullet(std::vector<int>& bullets, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
 	for(int& bullet_index : bullets) {
 		Entity& bullet = entities[bullet_index];
+
+		Line trajectory(bullet.position, bullet.position + bullet.velocity * delta_time);
+		for(int& asteroid_index : asteroids) {
+			Entity& asteroid = entities[asteroid_index];
+			if(collision_with_line(asteroid, trajectory)) {
+				asteroid.lines.clear();
+				bullet.position = bullet.position + bullet.velocity * 10000;
+			}
+		}
+
 		if(
 			bullet.position.x < 0 ||
 			bullet.position.x > WINDOW_WIDTH ||

@@ -32,6 +32,6 @@ void World::init() {
 void World::update(Input& input, double delta_time) {
 	control_player(entities[player_index], input, bullets, entities, delta_time);
 	control_asteroids(player_index, asteroids, entities, delta_time);
-	control_bullet(bullets, entities);
+	control_bullet(bullets, asteroids, entities, delta_time);
 	apply_velocities(entities, delta_time);
 }

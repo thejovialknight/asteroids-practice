@@ -294,6 +294,6 @@ CMakeFiles/asteroids.dir/src/main.cpp.o: \
  /home/conner/repos/asteroids-practice/src/config.h \
  /home/conner/repos/asteroids-practice/src/player.h \
  /home/conner/repos/asteroids-practice/src/bullet.h \
- /home/conner/repos/asteroids-practice/src/asteroid.h \
  /home/conner/repos/asteroids-practice/src/collision.h \
+ /home/conner/repos/asteroids-practice/src/asteroid.h \
  /home/conner/repos/asteroids-practice/src/render.h

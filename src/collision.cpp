@@ -15,6 +15,17 @@ bool collision(Entity& a, Entity& b) {
 	return false;
 }
 
+bool collision_with_line(Entity& entity, Line& line) {
+	for(Line& entity_line : entity.lines) {
+		Line off_line = offset_line(entity.position, entity_line);
+		if(intersect(line, off_line)) {
+			return true;
+		}
+	}
+	
+	return false;
+}
+
 // Checks if two lines intersect, return false if lines are collinearly overlapping
 bool intersect(Line& a, Line& b) {
 	// Vec2 intersection; // If we need the intersection point

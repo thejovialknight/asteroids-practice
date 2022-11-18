@@ -337,6 +337,7 @@ CMakeFiles/asteroids.dir/src/bullet.cpp.o: ../src/bullet.cpp \
   ../src/vec2.h \
   ../src/epsilon.h \
   ../src/config.h \
+  ../src/collision.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1483,8 +1484,8 @@ CMakeFiles/asteroids.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/config.h \
   ../src/player.h \
   ../src/bullet.h \
-  ../src/asteroid.h \
   ../src/collision.h \
+  ../src/asteroid.h \
   ../src/render.h
 
 CMakeFiles/asteroids.dir/src/player.cpp.o: ../src/player.cpp \
@@ -1844,7 +1845,8 @@ CMakeFiles/asteroids.dir/src/player.cpp.o: ../src/player.cpp \
   /usr/include/SDL2/SDL_version.h \
   /usr/include/SDL2/SDL_locale.h \
   /usr/include/SDL2/SDL_misc.h \
-  ../src/bullet.h
+  ../src/bullet.h \
+  ../src/collision.h
 
 CMakeFiles/asteroids.dir/src/render.cpp.o: ../src/render.cpp \
   /usr/include/stdc-predef.h \
@@ -2206,8 +2208,8 @@ CMakeFiles/asteroids.dir/src/render.cpp.o: ../src/render.cpp \
   ../src/config.h \
   ../src/player.h \
   ../src/bullet.h \
-  ../src/asteroid.h \
   ../src/collision.h \
+  ../src/asteroid.h \
   /usr/include/SDL2/SDL_render.h
 
 CMakeFiles/asteroids.dir/src/vec2.cpp.o: ../src/vec2.cpp \
@@ -2667,8 +2669,8 @@ CMakeFiles/asteroids.dir/src/world.cpp.o: ../src/world.cpp \
   ../src/config.h \
   ../src/player.h \
   ../src/bullet.h \
-  ../src/asteroid.h \
-  ../src/collision.h
+  ../src/collision.h \
+  ../src/asteroid.h
 
 
 ../src/world.cpp:
