@@ -45,7 +45,7 @@ std::vector<Line> asteroid_shape() {
 	};
 }
 
-void control_asteroids(int player_index, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
+void control_asteroids(bool& out_lost_game, int player_index, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
 	const double rotation_speed = 2;
 	
 	Entity& player = entities[player_index];
@@ -57,8 +57,8 @@ void control_asteroids(int player_index, std::vector<int>& asteroids, std::vecto
 		screen_wrap(asteroid, 32);
 		
 		if(collision(asteroid, player)) {
-			std::cout << "Colliding with player!" << std::endl;
 			player.lines.clear();
+			out_lost_game = true;
 		}
 	}
 
