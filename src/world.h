@@ -8,6 +8,9 @@
 #include "bullet.h"
 #include "asteroid.h"
 #include "collision.h"
+#include "line_explode.h"
+#include "table.h"
+#include "handle.h"
 
 enum GameState {
 	Pregame,
@@ -19,12 +22,14 @@ struct World {
 	GameState state = GameState::Pregame;
 	double time_to_next_state = 2;
 
-	std::vector<Entity> entities;
+	Table<Exploder> exploders;
+	Table<Line> lines;
 
-	// Entity references
-	int player_index;
-	std::vector<int> asteroids;
-	std::vector<int> bullets;
+	// Entities and table references
+	Table<Entity> entities;
+	Handle<Entity> player_handle;
+	Table<Handle<Entity>> asteroids;
+	Table<Handle<Entity>> bullets;
 
 	void init();
 	void update(Input& input, double delta_time);

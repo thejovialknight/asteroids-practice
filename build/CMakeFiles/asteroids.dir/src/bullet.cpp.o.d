@@ -106,7 +106,8 @@ CMakeFiles/asteroids.dir/src/bullet.cpp.o: \
  /home/conner/repos/asteroids-practice/src/vec2.h \
  /home/conner/repos/asteroids-practice/src/epsilon.h \
  /home/conner/repos/asteroids-practice/src/config.h \
- /home/conner/repos/asteroids-practice/src/collision.h \
+ /home/conner/repos/asteroids-practice/src/table.h \
+ /home/conner/repos/asteroids-practice/src/handle.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -180,4 +181,6 @@ CMakeFiles/asteroids.dir/src/bullet.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/conner/repos/asteroids-practice/src/collision.h \
+ /home/conner/repos/asteroids-practice/src/line_explode.h

@@ -153,10 +153,24 @@ CMakeFiles/asteroids.dir/src/input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asteroids.dir/src/input.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/repos/asteroids-practice/src/input.cpp -o CMakeFiles/asteroids.dir/src/input.cpp.s
 
+CMakeFiles/asteroids.dir/src/line_explode.cpp.o: CMakeFiles/asteroids.dir/flags.make
+CMakeFiles/asteroids.dir/src/line_explode.cpp.o: ../src/line_explode.cpp
+CMakeFiles/asteroids.dir/src/line_explode.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/asteroids.dir/src/line_explode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/line_explode.cpp.o -MF CMakeFiles/asteroids.dir/src/line_explode.cpp.o.d -o CMakeFiles/asteroids.dir/src/line_explode.cpp.o -c /home/conner/repos/asteroids-practice/src/line_explode.cpp
+
+CMakeFiles/asteroids.dir/src/line_explode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asteroids.dir/src/line_explode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/conner/repos/asteroids-practice/src/line_explode.cpp > CMakeFiles/asteroids.dir/src/line_explode.cpp.i
+
+CMakeFiles/asteroids.dir/src/line_explode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asteroids.dir/src/line_explode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/repos/asteroids-practice/src/line_explode.cpp -o CMakeFiles/asteroids.dir/src/line_explode.cpp.s
+
 CMakeFiles/asteroids.dir/src/main.cpp.o: CMakeFiles/asteroids.dir/flags.make
 CMakeFiles/asteroids.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/asteroids.dir/src/main.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/asteroids.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/asteroids.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/main.cpp.o -MF CMakeFiles/asteroids.dir/src/main.cpp.o.d -o CMakeFiles/asteroids.dir/src/main.cpp.o -c /home/conner/repos/asteroids-practice/src/main.cpp
 
 CMakeFiles/asteroids.dir/src/main.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/asteroids.dir/src/main.cpp.s: cmake_force
 CMakeFiles/asteroids.dir/src/player.cpp.o: CMakeFiles/asteroids.dir/flags.make
 CMakeFiles/asteroids.dir/src/player.cpp.o: ../src/player.cpp
 CMakeFiles/asteroids.dir/src/player.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/asteroids.dir/src/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/asteroids.dir/src/player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/player.cpp.o -MF CMakeFiles/asteroids.dir/src/player.cpp.o.d -o CMakeFiles/asteroids.dir/src/player.cpp.o -c /home/conner/repos/asteroids-practice/src/player.cpp
 
 CMakeFiles/asteroids.dir/src/player.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/asteroids.dir/src/player.cpp.s: cmake_force
 CMakeFiles/asteroids.dir/src/render.cpp.o: CMakeFiles/asteroids.dir/flags.make
 CMakeFiles/asteroids.dir/src/render.cpp.o: ../src/render.cpp
 CMakeFiles/asteroids.dir/src/render.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/asteroids.dir/src/render.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/asteroids.dir/src/render.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/render.cpp.o -MF CMakeFiles/asteroids.dir/src/render.cpp.o.d -o CMakeFiles/asteroids.dir/src/render.cpp.o -c /home/conner/repos/asteroids-practice/src/render.cpp
 
 CMakeFiles/asteroids.dir/src/render.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/asteroids.dir/src/render.cpp.s: cmake_force
 CMakeFiles/asteroids.dir/src/vec2.cpp.o: CMakeFiles/asteroids.dir/flags.make
 CMakeFiles/asteroids.dir/src/vec2.cpp.o: ../src/vec2.cpp
 CMakeFiles/asteroids.dir/src/vec2.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/asteroids.dir/src/vec2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/asteroids.dir/src/vec2.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/vec2.cpp.o -MF CMakeFiles/asteroids.dir/src/vec2.cpp.o.d -o CMakeFiles/asteroids.dir/src/vec2.cpp.o -c /home/conner/repos/asteroids-practice/src/vec2.cpp
 
 CMakeFiles/asteroids.dir/src/vec2.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/asteroids.dir/src/vec2.cpp.s: cmake_force
 CMakeFiles/asteroids.dir/src/world.cpp.o: CMakeFiles/asteroids.dir/flags.make
 CMakeFiles/asteroids.dir/src/world.cpp.o: ../src/world.cpp
 CMakeFiles/asteroids.dir/src/world.cpp.o: CMakeFiles/asteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/asteroids.dir/src/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/asteroids.dir/src/world.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asteroids.dir/src/world.cpp.o -MF CMakeFiles/asteroids.dir/src/world.cpp.o.d -o CMakeFiles/asteroids.dir/src/world.cpp.o -c /home/conner/repos/asteroids-practice/src/world.cpp
 
 CMakeFiles/asteroids.dir/src/world.cpp.i: cmake_force
@@ -231,6 +245,7 @@ asteroids_OBJECTS = \
 "CMakeFiles/asteroids.dir/src/entity.cpp.o" \
 "CMakeFiles/asteroids.dir/src/epsilon.cpp.o" \
 "CMakeFiles/asteroids.dir/src/input.cpp.o" \
+"CMakeFiles/asteroids.dir/src/line_explode.cpp.o" \
 "CMakeFiles/asteroids.dir/src/main.cpp.o" \
 "CMakeFiles/asteroids.dir/src/player.cpp.o" \
 "CMakeFiles/asteroids.dir/src/render.cpp.o" \
@@ -246,6 +261,7 @@ asteroids_EXTERNAL_OBJECTS =
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/entity.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/epsilon.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/input.cpp.o
+../bin/asteroids: CMakeFiles/asteroids.dir/src/line_explode.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/main.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/player.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/render.cpp.o
@@ -253,7 +269,7 @@ asteroids_EXTERNAL_OBJECTS =
 ../bin/asteroids: CMakeFiles/asteroids.dir/src/world.cpp.o
 ../bin/asteroids: CMakeFiles/asteroids.dir/build.make
 ../bin/asteroids: CMakeFiles/asteroids.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ../bin/asteroids"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/conner/repos/asteroids-practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ../bin/asteroids"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/asteroids.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

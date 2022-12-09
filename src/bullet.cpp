@@ -10,7 +10,7 @@ std::vector<Line> bullet_shape() {
 	};
 }
 
-void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entities) {
+void shoot(Entity& player, Table<Handle<Entity>>& bullets, Table<Entity>& entities, Table<Line>& lines) {
 	// Config
 	const double speed = 300;
 
@@ -23,25 +23,31 @@ void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entit
 		player_forward.x * speed,
 		player_forward.y * speed
 	);
-	entities.emplace_back(Entity(
+	bullets.add(Handle(entities, Entity(
 		position,
 		0,
 		velocity,
-		bullet_shape()
-	));
-	bullets.emplace_back(entities.size() - 1);
+		bullet_shape(),
+		lines
+	)));
 }
 
-void control_bullet(std::vector<int>& bullets, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
-	for(int& bullet_index : bullets) {
-		Entity& bullet = entities[bullet_index];
+void control_bullet(Table<Handle<Entity>>& bullets, Table<Handle<Entity>>& asteroids, Table<Entity>& entities, Table<Exploder>& exploders, double delta_time) {
+	for(int i = 0; i < bullets.size(); ++i) {
+		Handle<Entity>& bullet_handle = bullets.at(i);
+		Entity& bullet = bullet_handle.unwrap();
 
 		Line trajectory(bullet.position, bullet.position + bullet.velocity * delta_time);
-		for(int& asteroid_index : asteroids) {
-			Entity& asteroid = entities[asteroid_index];
+		for(int asteroid_index = 0; asteroid_index < asteroids.size(); ++asteroid_index) {
+			Handle<Entity>& asteroid_handle = asteroids.at(asteroid_index);
+			Entity& asteroid = asteroid_handle.unwrap();
 			if(collision_with_line(asteroid, trajectory)) {
-				asteroid.lines.clear();
-				bullet.position = bullet.position + bullet.velocity * 10000;
+				explode_entity(exploders, asteroid_handle);
+				explode_entity(exploders, bullet_handle);
+				destroy_entity(bullet_handle);
+				destroy_entity(asteroid_handle);
+				bullets.remove(i);
+				asteroids.remove(asteroid_index);
 			}
 		}
 
@@ -51,7 +57,8 @@ void control_bullet(std::vector<int>& bullets, std::vector<int>& asteroids, std:
 			bullet.position.y < 0 ||
 		 	bullet.position.y > WINDOW_HEIGHT
 		) {
-			// destroy the bullet index and entity. Just wait for tables tbh
+			destroy_entity(bullet_handle);
+			bullets.remove(i);
 		}
 	}
 }

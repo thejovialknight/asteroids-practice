@@ -2,33 +2,41 @@
 #include "src/config.h"
 
 // Spawns asteroid at particular point
-void spawn_asteroid(Vec2 position, std::vector<int>& asteroids, std::vector<Entity>& entities) {
+void spawn_asteroid(Vec2 position, Table<Handle<Entity>>& asteroids, Table<Entity>& entities, Table<Line>& lines) {
 	int max_speed = 100;
-	entities.emplace_back(Entity(position, rand() % 1000, Vec2((rand() % max_speed) - (double)max_speed / 2, (rand() % max_speed) - (double)max_speed / 2), asteroid_shape()));
-	asteroids.emplace_back(entities.size() -1);
+	asteroids.add(Handle(entities, Entity(
+		position, 
+		rand() % 1000, 
+		Vec2(
+			(rand() % max_speed) - (double)max_speed / 2, 
+			(rand() % max_speed) - (double)max_speed / 2
+		),
+		asteroid_shape(),
+		lines
+	)));
 }
 
 // Randomly spawns asteroid on edges of map
-void spawn_asteroid(std::vector<int>& asteroids, std::vector<Entity>& entities) {
+void spawn_asteroid(Table<Handle<Entity>>& asteroids, Table<Entity>& entities, Table<Line>& lines) {
 	const double window_buffer = 32;
 	int spawn_side = (rand() % 3) + 1;
 	int spawn_location;
 	switch(spawn_side) {
 		case 0: // Left
 			spawn_location = rand() % WINDOW_HEIGHT;
-			spawn_asteroid(Vec2(-window_buffer, spawn_location), asteroids, entities);
+			spawn_asteroid(Vec2(-window_buffer, spawn_location), asteroids, entities, lines);
 			break;
 		case 1: // Right
 			spawn_location = rand() % WINDOW_HEIGHT;
-			spawn_asteroid(Vec2(WINDOW_WIDTH + window_buffer, spawn_location), asteroids, entities);
+			spawn_asteroid(Vec2(WINDOW_WIDTH + window_buffer, spawn_location), asteroids, entities, lines);
 			break;
 		case 2: // Top
 			spawn_location = rand() % WINDOW_WIDTH;
-			spawn_asteroid(Vec2(spawn_location, -window_buffer), asteroids, entities);
+			spawn_asteroid(Vec2(spawn_location, -window_buffer), asteroids, entities, lines);
 			break;
 		case 3: // Bottom
 			spawn_location = rand() % WINDOW_WIDTH;
-			spawn_asteroid(Vec2(spawn_location, WINDOW_HEIGHT + window_buffer), asteroids, entities);
+			spawn_asteroid(Vec2(spawn_location, WINDOW_HEIGHT + window_buffer), asteroids, entities, lines);
 			break;
 		default:
 			break;
@@ -45,21 +53,25 @@ std::vector<Line> asteroid_shape() {
 	};
 }
 
-void control_asteroids(bool& out_lost_game, int player_index, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time) {
+void control_asteroids(bool& out_lost_game, Handle<Entity>& player_handle, Table<Handle<Entity>>& asteroids, Table<Entity>& entities, Table<Exploder>& exploders, double delta_time) {
 	const double rotation_speed = 2;
 	
-	Entity& player = entities[player_index];
+	Entity& player = player_handle.unwrap(); 
 
-	for(int& asteroid_index : asteroids) {
-		Entity& asteroid = entities[asteroid_index];
+	for(int i = 0; i < asteroids.size(); ++i) {
+		Handle<Entity>& asteroid_handle = asteroids.at(i);
+		Entity& asteroid = asteroid_handle.unwrap();
 
-		asteroid.rotation += rotation_speed * delta_time;
+		asteroid.rotate(rotation_speed * delta_time);
 		screen_wrap(asteroid, 32);
 		
 		if(collision(asteroid, player)) {
-			player.lines.clear();
+			explode_entity(exploders, player_handle);
+			explode_entity(exploders, asteroid_handle);
+			destroy_entity(asteroid_handle);
+			destroy_entity(player_handle);
+			asteroids.remove(i);
 			out_lost_game = true;
 		}
 	}
-
 }

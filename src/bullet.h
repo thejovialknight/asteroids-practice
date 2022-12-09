@@ -3,7 +3,10 @@
 #include "entity.h"
 #include "config.h"
 #include "collision.h"
+#include "line_explode.h"
+#include "table.h"
+#include "handle.h"
 
 std::vector<Line> bullet_shape();
-void shoot(Entity& player, std::vector<int>& bullets, std::vector<Entity>& entities);
-void control_bullet(std::vector<int>& bullets, std::vector<int>& asteroids, std::vector<Entity>& entities, double delta_time);
+void shoot(Entity& player, Table<Handle<Entity>>& bullets, Table<Entity>& entities, Table<Line>& lines);
+void control_bullet(Table<Handle<Entity>>& bullets, Table<Handle<Entity>>& asteroids, Table<Entity>& entities, Table<Exploder>& exploders, double delta_time);

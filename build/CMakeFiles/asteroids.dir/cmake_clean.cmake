@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/asteroids.dir/src/epsilon.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/input.cpp.o"
   "CMakeFiles/asteroids.dir/src/input.cpp.o.d"
+  "CMakeFiles/asteroids.dir/src/line_explode.cpp.o"
+  "CMakeFiles/asteroids.dir/src/line_explode.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/main.cpp.o"
   "CMakeFiles/asteroids.dir/src/main.cpp.o.d"
   "CMakeFiles/asteroids.dir/src/player.cpp.o"

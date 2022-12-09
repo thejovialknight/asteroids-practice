@@ -31,6 +31,11 @@
 },
 {
   "directory": "/home/conner/repos/asteroids-practice/build",
+  "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/line_explode.cpp.o -c /home/conner/repos/asteroids-practice/src/line_explode.cpp",
+  "file": "/home/conner/repos/asteroids-practice/src/line_explode.cpp"
+},
+{
+  "directory": "/home/conner/repos/asteroids-practice/build",
   "command": "/usr/bin/c++  -I/home/conner/repos/asteroids-practice/include -I/home/conner/repos/asteroids-practice -std=gnu++17 -o CMakeFiles/asteroids.dir/src/main.cpp.o -c /home/conner/repos/asteroids-practice/src/main.cpp",
   "file": "/home/conner/repos/asteroids-practice/src/main.cpp"
 },

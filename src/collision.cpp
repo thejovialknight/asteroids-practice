@@ -2,11 +2,11 @@
 #include "src/entity.h"
 
 bool collision(Entity& a, Entity& b) {
-	for(Line& line_a : a.lines) {
-		Line offset_a = offset_line(a.position, line_a);
-		for(Line& line_b : b.lines) {
-			Line offset_b = offset_line(b.position, line_b);
-			if(intersect(offset_a, offset_b)){
+	for(Handle<Line>& line_handle_a : a.line_handles.values) {
+		Line& line_a = line_handle_a.unwrap();
+		for(Handle<Line>& line_handle_b : b.line_handles.values) {
+			Line& line_b = line_handle_b.unwrap();
+			if(intersect(line_a, line_b)){
 				return true;
 			}
 		}
@@ -16,9 +16,9 @@ bool collision(Entity& a, Entity& b) {
 }
 
 bool collision_with_line(Entity& entity, Line& line) {
-	for(Line& entity_line : entity.lines) {
-		Line off_line = offset_line(entity.position, entity_line);
-		if(intersect(line, off_line)) {
+	for(Handle<Line>& entity_line_handle : entity.line_handles.values) {
+		Line& entity_line = entity_line_handle.unwrap();
+		if(intersect(line, entity_line)) {
 			return true;
 		}
 	}
@@ -60,5 +60,4 @@ bool intersect(Line& a, Line& b) {
 	// Otherwise, the two line segments are not parallel but do not intersect
 	return false;
 }
-
 

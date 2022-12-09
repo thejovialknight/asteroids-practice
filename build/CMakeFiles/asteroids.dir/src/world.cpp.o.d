@@ -292,7 +292,10 @@ CMakeFiles/asteroids.dir/src/world.cpp.o: \
  /home/conner/repos/asteroids-practice/src/vec2.h \
  /home/conner/repos/asteroids-practice/src/epsilon.h \
  /home/conner/repos/asteroids-practice/src/config.h \
+ /home/conner/repos/asteroids-practice/src/table.h \
+ /home/conner/repos/asteroids-practice/src/handle.h \
  /home/conner/repos/asteroids-practice/src/player.h \
  /home/conner/repos/asteroids-practice/src/bullet.h \
  /home/conner/repos/asteroids-practice/src/collision.h \
+ /home/conner/repos/asteroids-practice/src/line_explode.h \
  /home/conner/repos/asteroids-practice/src/asteroid.h

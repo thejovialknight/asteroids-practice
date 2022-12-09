@@ -1,4 +1,5 @@
 #include "world.h"
+#include "src/line_explode.h"
 
 void World::init() {
 	start_pregame();
@@ -7,9 +8,9 @@ void World::init() {
 void World::update(Input& input, double delta_time) {
 	if(state == GameState::Game) {
 		bool lost_game = false;
-		control_player(entities[player_index], input, bullets, entities, delta_time);
-		control_asteroids(lost_game, player_index, asteroids, entities, delta_time);
-		control_bullet(bullets, asteroids, entities, delta_time);
+		control_player(player_handle, input, bullets, entities, lines, delta_time);
+		control_asteroids(lost_game, player_handle, asteroids, entities, exploders, delta_time);
+		control_bullet(bullets, asteroids, entities, exploders, delta_time);
 		apply_velocities(entities, delta_time);
 
 		if(lost_game) {
@@ -19,6 +20,8 @@ void World::update(Input& input, double delta_time) {
 	else {
 		countdown_state(delta_time);
 	}
+
+	control_exploders(exploders, delta_time);
 }
 
 void World::countdown_state(double delta_time) {
@@ -42,24 +45,22 @@ void World::start_pregame() {
 	entities.clear();
 	asteroids.clear();
 	bullets.clear();
+	exploders.clear();
 
 	// Create player
-	entities.emplace_back(Entity(Vec2(720, 720), 0, Vec2(), player_shape()));
-	player_index = 0;
+	player_handle.link(entities, Entity(Vec2(720, 720), 0, Vec2(), player_shape(), lines));
 
 	// Create asteroids
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
-	spawn_asteroid(asteroids, entities);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
+	spawn_asteroid(asteroids, entities, lines);
 }
 
 void World::start_game() {

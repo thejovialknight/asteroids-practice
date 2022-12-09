@@ -179,4 +179,7 @@ CMakeFiles/asteroids.dir/src/asteroid.cpp.o: \
  /home/conner/repos/asteroids-practice/src/vec2.h \
  /home/conner/repos/asteroids-practice/src/epsilon.h \
  /home/conner/repos/asteroids-practice/src/config.h \
- /home/conner/repos/asteroids-practice/src/collision.h
+ /home/conner/repos/asteroids-practice/src/table.h \
+ /home/conner/repos/asteroids-practice/src/handle.h \
+ /home/conner/repos/asteroids-practice/src/collision.h \
+ /home/conner/repos/asteroids-practice/src/line_explode.h

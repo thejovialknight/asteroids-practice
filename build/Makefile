@@ -273,6 +273,30 @@ src/input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/input.cpp.s
 .PHONY : src/input.cpp.s
 
+src/line_explode.o: src/line_explode.cpp.o
+.PHONY : src/line_explode.o
+
+# target to build an object file
+src/line_explode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/line_explode.cpp.o
+.PHONY : src/line_explode.cpp.o
+
+src/line_explode.i: src/line_explode.cpp.i
+.PHONY : src/line_explode.i
+
+# target to preprocess a source file
+src/line_explode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/line_explode.cpp.i
+.PHONY : src/line_explode.cpp.i
+
+src/line_explode.s: src/line_explode.cpp.s
+.PHONY : src/line_explode.s
+
+# target to generate assembly for a file
+src/line_explode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asteroids.dir/build.make CMakeFiles/asteroids.dir/src/line_explode.cpp.s
+.PHONY : src/line_explode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -420,6 +444,9 @@ help:
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
+	@echo "... src/line_explode.o"
+	@echo "... src/line_explode.i"
+	@echo "... src/line_explode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
